@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
 
-import Example from '../../src'
+import { Card, CardWrapper } from '../../src/index'
 
 class Demo extends Component {
   render() {
-    return <div>
-      <h1>react-swipeable-cards Demo</h1>
-      <Example/>
-    </div>
+    return(
+      <div>
+      </div>
+    );
   }
 }
 
