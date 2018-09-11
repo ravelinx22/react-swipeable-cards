@@ -1,25 +1,20 @@
 import React, { Component  } from 'react';
-import "./App.scss";
+import "../css/App.css";
 
 class CardWrapper extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-
 		};
-
 	}
 
 	componentDidMount() {
 		this.setupCards();
-
 	}
 
 	componentDidUpdate() {
 		this.setupCards();
-
 	}
-
 
 	setupCards() {
 		var container = document.querySelector('.container');
@@ -29,19 +24,14 @@ class CardWrapper extends Component {
 			card.style.zIndex = allCards.length - index;
 			card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
 			card.style.opacity = (10 - index) / 10;
-
-
 		});
 		container.classList.add('loaded');
-
 	}
 
 	renderCards() {
 		return React.Children.map(this.props.children, (child) => {
 			return React.cloneElement(child, { superOnSwipe: this.superOnSwipe.bind(this)   })
-
 		});
-
 	}
 
 	renderEndCard() {
@@ -50,16 +40,12 @@ class CardWrapper extends Component {
 				<div className="card_container end_card">
 					{this.props.addEndCard()}
 				</div>
-
 			);
-
 		}
-
 	}
 
 	superOnSwipe() {
 		this.setupCards();
-
 	}
 
 	render() {
@@ -70,11 +56,8 @@ class CardWrapper extends Component {
 					{this.renderEndCard()}
 				</div>
 			</div>
-
 		);
-
 	}
-
 }
 
 export default CardWrapper;

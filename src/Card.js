@@ -23,7 +23,6 @@ export default class Card extends Component {
 				var yMulti = event.deltaY / 80;
 				var rotate = xMulti * yMulti;
 				event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
-
 			}
 		}
 	}
