@@ -190,6 +190,37 @@ class Example extends Component {
 }
 ```
 
+### Custom styles
+
+You can change the style of the Card and CardWrapper passing the style prop.
+
+**Using custom styles example**
+
+```jsx
+import React, {Component} from 'react'
+import {render} from 'react-dom'
+import { Card, CardWrapper } from 'react-swipeable-cards';
+
+class Example extends Component {
+  render() {
+    const wrapperStyle = {
+      backgroundColor: "#024773"
+    }
+    
+    const cardStyle = {
+      backgroundColor: "#059FFF"
+    }
+    return(
+      <CardWrapper style={wrapperStyle}>
+        <Card style={cardStyle}>
+          First
+        </Card>
+      </CardWrapper>
+    );
+  }
+}
+```
+
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
 
