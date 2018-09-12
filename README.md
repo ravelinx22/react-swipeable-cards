@@ -119,6 +119,42 @@ class Example extends Component {
 }
 ```
 
+**Passing data to card**
+
+```jsx
+import React, { Component } from 'react'
+import { render } from 'react-dom'
+import { Card, CardWrapper } from '../../src/index'
+
+class Example extends Component {
+  onSwipe(data) {
+    console.log(data.name + " was swiped.");
+  }
+
+  renderCards() {
+    let data = [{id: 1, name: "First"},{id: 2, name: "Second"}];
+    return data.map((d) => {
+      return(
+        <Card
+          key={d.id}
+          onSwipe={this.onSwipe.bind(this)}
+          data={d}>
+            {d.name}
+        </Card>
+      );
+    });
+  }
+
+  render() {
+    return(
+      <CardWrapper>
+        {this.renderCards()}
+      </CardWrapper>
+    );
+  }
+}
+```
+
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
 
