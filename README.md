@@ -53,7 +53,7 @@ Is the container of all the cards that are going to be displayed.
 
 ### Card
 
-Card that is going to be displayed inside the CardWrapper
+Card that is going to be displayed inside the CardWrapper.
 
 **Optional Props:**
 
@@ -65,6 +65,59 @@ Card that is going to be displayed inside the CardWrapper
 | onSwipeRight | Function | Called when a card is swiped right.                      |
 | onDoubleTap  | Function | Called when a card is taped twice.                       |
 | style        | Object   | Custom styles that is going to have the card.            |
+
+#### Examples
+
+**Swipe and Tap listeners**
+
+```jsx
+import React, { Component } from 'react'
+import { render } from 'react-dom'
+import { Card, CardWrapper } from '../../src/index'
+
+class Example extends Component {
+
+  onSwipe(data) {
+    console.log("I was swiped.");
+  }
+
+  onSwipeLeft(data) {
+    console.log("I was swiped left.");
+  }
+
+  onSwipeRight(data) {
+    console.log("I was swiped right.");
+  }
+
+  onDoubleTap(data) {
+    console.log("I was double taped.");
+  }
+
+  renderCards() {
+    let data = ["first", "second", "third"];
+    return data.map((d) => {
+      return(
+        <Card
+          key={d}
+          onSwipe={this.onSwipe.bind(this)}
+          onSwipeLeft={this.onSwipeLeft.bind(this)}
+          onSwipeRight={this.onSwipeRight.bind(this)}
+          onDoubleTap={this.onDoubleTap.bind(this)}>
+            Hello World!
+        </Card>
+      );
+    });
+  }
+  
+  render() {
+    return(
+      <CardWrapper>
+        {this.renderCards()}
+      </CardWrapper>
+    );
+  }
+}
+```
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
