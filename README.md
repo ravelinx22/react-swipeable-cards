@@ -92,14 +92,17 @@ Card that is going to be displayed inside the CardWrapper.
 
 **Optional Props:**
 
-| Name         | Type     | Description                                              |
-|--------------|----------|----------------------------------------------------------|
-| data         | Object   | Data object that is going to be represented by the card. |
-| onSwipe      | Function | Called when a card is swiped left or right.              |
-| onSwipeLeft  | Function | Called when a card is swiped left.                       |
-| onSwipeRight | Function | Called when a card is swiped right.                      |
-| onDoubleTap  | Function | Called when a card is tapped twice.                       |
-| style        | Object   | Custom styles that is going to have the card.            |
+| Name                | Type     | Description                                              |
+|---------------------|----------|----------------------------------------------------------|
+| data                | Object   | Data object that is going to be represented by the card. |
+| onSwipe             | Function | Called when a card is swiped left or right.              |
+| onSwipeLeft         | Function | Called when a card is swiped left.                       |
+| onSwipeRight        | Function | Called when a card is swiped right.                      |
+| onDoubleTap         | Function | Called when a card is tapped twice.                      |
+| isSwipeEnabled      | Boolean  | If set to false disables left and right swiping.         |
+| isLeftSwipeEnabled  | Boolean  | If set to false disables left swipe.                     |
+| isRightSwipeEnabled | Boolean  | If set to false disables right swipe.                    |
+| style               | Object   | Custom styles that is going to have the card.            |
 
 #### Examples
 
