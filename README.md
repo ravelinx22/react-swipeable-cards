@@ -38,7 +38,9 @@ class Example extends Component {
 }
 ```
 
-## CardWrapper
+## Components
+
+### CardWrapper
 
 Is the container of all the cards that are going to be displayed.
 
@@ -49,7 +51,7 @@ Is the container of all the cards that are going to be displayed.
 | addEndCard | Function | Function that returns a custom position fixed Card component that is going to be displayed when all cards have been swiped. If the prop is not passed CardWrapper assumes that there is no need for a fixed card at the end of the deck. |
 | style      | Object   | Custom styles that is going to have the container.                                                                                                                                                                                       |
 
-## Card
+### Card
 
 Card that is going to be displayed inside the CardWrapper
 
