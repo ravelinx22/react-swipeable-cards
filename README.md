@@ -51,6 +51,41 @@ Is the container of all the cards that are going to be displayed.
 | addEndCard | Function | Function that returns a custom position fixed Card component that is going to be displayed when all cards have been swiped. If the prop is not passed CardWrapper assumes that there is no need for a fixed card at the end of the deck. |
 | style      | Object   | Custom styles that is going to have the container.                                                                                                                                                                                       |
 
+**Adding a end card**
+
+```jsx
+import React, { Component  } from 'react'
+import { render  } from 'react-dom'
+import { Card, CardWrapper } from 'react-swipeable-cards';
+
+// Create custom end card
+class MyEndCard extends Component {
+  render() {
+    return(
+      <div>You Finished Swiping!</div>
+    );
+  }
+}
+
+// Pass your end card to the card wrapper
+class Example extends Component {
+  getEndCard() {
+    return(
+      <MyEndCard/>
+    );
+  }
+  
+  render() {
+    return(
+      <CardWrapper addEndCard={this.getEndCard.bind(this)}>
+        <Card>First</Card>
+        <Card>Second</Card>
+      </CardWrapper>
+    );
+  }
+}
+```
+
 ### Card
 
 Card that is going to be displayed inside the CardWrapper.
@@ -73,7 +108,7 @@ Card that is going to be displayed inside the CardWrapper.
 ```jsx
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import { Card, CardWrapper } from '../../src/index'
+import { Card, CardWrapper } from 'react-swipeable-cards';
 
 class Example extends Component {
 
@@ -119,12 +154,12 @@ class Example extends Component {
 }
 ```
 
-**Passing data to card**
+**Passing data to a card**
 
 ```jsx
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import { Card, CardWrapper } from '../../src/index'
+import { Card, CardWrapper } from 'react-swipeable-cards';
 
 class Example extends Component {
   onSwipe(data) {
