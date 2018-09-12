@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 16px);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+}
+.container .cards_container {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: center;
+  z-index: 1;
+}
+.container .cards_container .card_container {
+  display: inline-block;
+  width: 90vw;
+  max-width: 400px;
+  height: 70vh;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  will-change: transform;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.container .cards_container .moving.card_container {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+
+/*# sourceMappingURL=demo.8461c228.css.map*/
