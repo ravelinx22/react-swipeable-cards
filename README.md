@@ -1,4 +1,4 @@
-# react-swipeable-cards
+# React-Swipeable-Cards
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
@@ -15,6 +15,34 @@ npm install react-swipeable-cards --save
 ````
 
 ### Demo
+
+## Usage
+
+## Example
+
+```jsx
+import React, {Component} from 'react';
+import {render} from 'react-dom';
+import { Card, CardWrapper } from 'react-swipeable-cards';
+
+class Example extends Component {
+  render() {
+    return(
+      <CardWrapper>
+        <Card>
+          Hello World!
+        </Card>
+      </CardWrapper>
+    );
+  }
+}
+```
+
+## CardWrapper
+
+## Card
+
+
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
