@@ -1,8 +1,6 @@
 # React-Swipeable-Cards
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
 
 React-swipeable-cards is a flexible react component that lets you build custom interactive cards that can be swipeable.
 
@@ -223,11 +221,6 @@ class Example extends Component {
 }
 ```
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+## License
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
-
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+MIT ©
