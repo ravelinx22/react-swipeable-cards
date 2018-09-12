@@ -16,6 +16,8 @@ npm install react-swipeable-cards --save
 
 ### Demo
 
+See React-Swipeable-Cards in action: [Live Demo](https://ravelinx22.github.io/react-swipeable-cards/)
+
 ## Usage
 
 ## Example
