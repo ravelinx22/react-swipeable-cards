@@ -98,7 +98,7 @@ Card that is going to be displayed inside the CardWrapper.
 | onSwipe      | Function | Called when a card is swiped left or right.              |
 | onSwipeLeft  | Function | Called when a card is swiped left.                       |
 | onSwipeRight | Function | Called when a card is swiped right.                      |
-| onDoubleTap  | Function | Called when a card is taped twice.                       |
+| onDoubleTap  | Function | Called when a card is tapped twice.                       |
 | style        | Object   | Custom styles that is going to have the card.            |
 
 #### Examples
@@ -125,7 +125,7 @@ class Example extends Component {
   }
 
   onDoubleTap(data) {
-    console.log("I was double taped.");
+    console.log("I was double tapped.");
   }
 
   renderCards() {
