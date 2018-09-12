@@ -4,7 +4,17 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe react-swipeable-cards here.
+React-swipeable-cards is a flexible react component that lets you build custom interactive cards that can be swipeable.
+
+## Getting Started
+
+### Installing
+
+````
+npm install react-swipeable-cards --save
+````
+
+### Demo
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
