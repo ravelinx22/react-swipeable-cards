@@ -33,7 +33,7 @@ export default class Card extends Component {
 				var newClass = this.state.classList.filter(s => s !== 'moving');
 				this.setState({classList: newClass});
 				var moveOutWidth = document.body.clientWidth;
-				var keep = Math.abs(event.deltaX) < 300;
+				var keep = Math.abs(event.deltaX) < 100; // reduce the width to 100 (from 300) to acommodate mobile screens
 				event.target.classList.toggle('removed', !keep);
 				if (keep) {
 					event.target.style.transform = '';
